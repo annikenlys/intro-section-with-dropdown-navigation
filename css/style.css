@@ -17,13 +17,113 @@
 
 body {
     background-color: var(--almost-white);
-    min-height: 100vh;
     margin: 0;
+    padding: 0;
+    min-height: 100vh;
     font-size: 1rem;
     font-weight: 500;
-    line-height: 26;
-    text-space: 1;
+    line-height: 26px;
+    text-indent: 1px;
     color: var(--medium-gray);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    grid-template-areas:
+        "header"
+        "herobanner"
+        "main"
+        "footer";
+}
+
+.header {
+    height: 35px;
+    width: 343px;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 16px 24px 16px;
+    color: var(--Black);
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.hero-banner {
+    height: 281.25px;
+    width: 375px;
+    margin: 0;
+
+    background-image: url("../assets/images/image-hero-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: herobanner;
+}
+
+.main {
+    grid-area: main;
+    height: 208px;
+    width: 343px;
+    margin: 47.75px 16px 48px 16px;
+    text-align: center;
+}
+
+.main .main-content-text h1 {
+    color: var(--Black);
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -0.5px;
+    text-indent: 1px;
+}
+
+.main .main-content-text p {
+    height: 78px;
+    color: var(--medium-gray);
+}
+
+.btn-main {
+    background-color: var(--Black);
+    color: var(--almost-white);
+    border: none;
+    border-radius: 15px;
+    height: 48px;
+    width: 136px;
+}
+
+.btn-main:hover {
+    background-color: var(--pure-white);
+    color: var(--Black);
+    border: solid 1px #000;
+    cursor: pointer;
+}
+
+.footer {
+    grid-area: footer;
+    margin: 0 16px 94px 16px;
+    height: 26px;
+    width: 343px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    height: 26px;
+    width: 343px;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+footer ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    justify-content: space-between;
+    justify-items: center;
+    flex-wrap: nowrap;
+}
+
+.icon {
 }
 
 /* Small (sm) */
