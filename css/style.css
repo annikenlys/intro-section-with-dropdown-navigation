@@ -1,0 +1,47 @@
+:root {
+    /*FONTS*/
+    --font-family: 'Epilogue', sans-serif;
+
+    /*COLORS*/
+    --pure-white: #FFFFFF;
+    --almost-white: #FAFAFA;
+    --light-gray: #ADADAD;
+    --medium-gray: #686868;
+    --Black: #151515;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    background-color: var(--almost-white);
+    min-height: 100vh;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 26;
+    text-space: 1;
+    color: var(--medium-gray);
+}
+
+/* Small (sm) */
+@media (min-width: 640px) {
+}
+
+/* Medium (md) */
+@media (min-width: 768px) {
+}
+
+/* Large (lg) */
+@media (min-width: 1024px) {
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+}
+
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+}
